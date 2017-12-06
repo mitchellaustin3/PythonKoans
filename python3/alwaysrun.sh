@@ -1,7 +1,2 @@
 #!/bin/bash
-#Lazy way to auto rerun
-while [ True ]
-do
-    ./run.sh
-    sleep 3
-done
+watch -n 1 -c -d './run.sh | tail -n 20'
